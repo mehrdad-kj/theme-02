@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Tauri&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Coming Soon</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./contents/logo.svg" />
+  </head>
+  <body>
+    <!-- Loading section -->
+    <section id="loading--container">
+      <span class="loader"></span>
+    </section>
+
+    <section id="main--container">
+      <!-- Background Video -->
+      <div class="video-container">
+        <video id="background-video" autoplay loop muted>
+          <source
+            src="https://videos.pexels.com/video-files/1448735/1448735-hd_2048_1080_24fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
+      <!-- 
+        Header Section
+        ** logo size is 70px x 70px**
+      -->
+      <header>
+        <div class="image--container">
+          <img id="logo" src="./contents/logo.svg" alt="company-name" />
+        </div>
+      </header>
+
+      <!--
+         Main Section 
+         ** The openeing time is set in a json format in a script tag at the end of body named  countDownDate**
+      -->
+      <main>
+        <div>
+          <span class="coming--soon_text">coming soon</span>
+          <!-- Company name -->
+          <p class="main--text">company name</p>
+        </div>
+        <!-- Timer section -->
+        <div id="time">
+          <div id="days"></div>
+          <div id="hours"></div>
+          <div id="minutes"></div>
+          <div id="seconds"></div>
+          <span class="opening--title">until the opening</span>
+        </div>
+      </main>
+
+      <!-- 
+        Footer section
+       -->
+      <footer>
+        <div class="social--container">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="./contents/facebook.svg" alt="facebook" />
+          </a>
+          <a href="https://www.gmail.com" target="_blank">
+            <img src="./contents/gmail.svg" alt="gmail" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="./contents/instagram.svg" alt="instagram" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="./contents/twitter.svg" alt="twitter" />
+          </a>
+        </div>
+        <div class="copyright">
+          <span>lorem ipsum <span>&#169;</span> 2024 all rights reserved.</span>
+        </div>
+      </footer>
+    </section>
+
+    <!-- **This script tag is used for containing a json included the countDownDate** -->
+    <script type="application/json">
+      { "countDownDate": "2025-01-05T15:37:25" }
+    </script>
+
+    <!-- Main js file -->
+    <script src="./index.js"></script>
+  </body>
+</html>
